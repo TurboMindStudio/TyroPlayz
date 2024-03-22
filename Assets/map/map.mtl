@@ -1,0 +1,112 @@
+newmtl Smpropplantpalm021Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Smpropplantpalm021_diff.png
+map_Kd Smpropplantpalm021_diff.png
+map_d Smpropplantpalm021_diff.png
+
+newmtl CombinedmeshRootScene491Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka CombinedmeshRootScene491_diff.png
+map_Kd CombinedmeshRootScene491_diff.png
+map_d CombinedmeshRootScene491_diff.png
+
+newmtl CombinedmeshRootScene92961Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka CombinedmeshRootScene92961_diff.png
+map_Kd CombinedmeshRootScene92961_diff.png
+map_d CombinedmeshRootScene92961_diff.png
+
+newmtl Smbldcontainerbridge011Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Smbldcontainerbridge011_diff.png
+map_Kd Smbldcontainerbridge011_diff.png
+map_d Smbldcontainerbridge011_diff.png
+
+newmtl CombinedmeshRootScene82691Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka CombinedmeshRootScene82691_diff.png
+map_Kd CombinedmeshRootScene82691_diff.png
+map_d CombinedmeshRootScene82691_diff.png
+
+newmtl CombinedmeshRootScene92271Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka CombinedmeshRootScene92271_diff.png
+map_Kd CombinedmeshRootScene92271_diff.png
+map_d CombinedmeshRootScene92271_diff.png
+
+newmtl CombinedmeshRootScene511Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka CombinedmeshRootScene511_diff.png
+map_Kd CombinedmeshRootScene511_diff.png
+map_d CombinedmeshRootScene511_diff.png
+
+newmtl Border1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Border1_diff.png
+map_Kd Border1_diff.png
+map_d Border1_diff.png
+
