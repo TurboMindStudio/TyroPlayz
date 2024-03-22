@@ -11,7 +11,7 @@ public class PlayerInteract : MonoBehaviour
     private PlayerUi playerUi;
     private RaycastHit hit;
     public GameObject InteractableButton;
-    
+    public Outline[] outline;
     private void Start()
     {
         playerUi = GetComponent<PlayerUi>();
@@ -25,13 +25,16 @@ public class PlayerInteract : MonoBehaviour
         Ray ray=new Ray(cam.transform.position, cam.transform.forward);
         Debug.DrawRay(ray.origin, ray.direction * distance);
         RaycastHit hit;
-       if (Physics.Raycast(ray, out hit, distance, mask))
+        if(Physics.Raycast(ray, out hit, distance, mask))
         {
             if(hit.collider.GetComponent<Interactable>()!=null)
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 playerUi.UpdateText(interactable.promptMsg);
                 InteractableButton.SetActive(true);
+
+                Outline outline = hit.collider.GetComponent<Outline>();
+                outline.enabled = true;
                 //Windows
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -43,7 +46,12 @@ public class PlayerInteract : MonoBehaviour
         else
         {
             InteractableButton.SetActive(false);
+            UiManager.instance.UpdateInfoText(string.Empty);
 
+            foreach (Outline ItemOutline in outline)
+            {
+                ItemOutline.enabled = false;
+            }
         }
 
     }
@@ -61,7 +69,7 @@ public class PlayerInteract : MonoBehaviour
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 playerUi.UpdateText(interactable.promptMsg);
-                
+           
                 interactable.baseInteract();
                 
 

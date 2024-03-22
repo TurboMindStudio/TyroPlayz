@@ -30,9 +30,9 @@ public class tyroPatrol : MonoBehaviour
 
     private void Update()
     {
-       
 
-       
+        PATROL();
+
 
         // Check for targets within detection radius
         Collider[] targets = Physics.OverlapSphere(transform.position, detectionRadius, targetMask);

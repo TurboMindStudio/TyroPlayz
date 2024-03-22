@@ -8,6 +8,14 @@ public class door : Interactable
     [SerializeField] Animator animator;
     protected override void Interact()
     {
-        animator.SetBool("doorOpen", true);
+        if(GameManager.Instance.haveKey)
+        {
+            animator.SetBool("doorOpen", true);
+        }
+        else
+        {
+            UiManager.instance.UpdateInfoText("Find door key.");
+        }
+        
     }
 }
